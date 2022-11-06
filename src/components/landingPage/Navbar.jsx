@@ -59,7 +59,7 @@ function Navbar({ dashboard, Landing }) {
             </>
           }
           {(isLogin && Landing && !dashboard) && <UserProfileNav dashboard={dashboard} loginStatus={setIsLogin} />}
-          {!isLogin && <NavLink to="/Login" className='btnLogin'>Login</NavLink>}
+          {!isLogin && <NavLink to="/login" className='btnLogin'>Login</NavLink>}
         </div>
         {(isLogin && dashboard) && <UserProfileNav dashboard={dashboard} loginStatus={setIsLogin} />}
       </div>
@@ -85,7 +85,7 @@ const NavbarStyle = styled.div`
     align-items:center;
     max-width: 85%;
     margin: 12px auto;
-    over-flow:hidden;
+    overflow:hidden;
     
     .hmg{
       position:absolute;
@@ -100,7 +100,7 @@ const NavbarStyle = styled.div`
     justify-content:space-between;
 
     .logo {
-      width: clamp(30px, 4vw, 60px)
+      width: clamp(30px, 4vw, 60px);
       height: clamp(30px, 4vw, 60px)
     }
 
@@ -190,7 +190,7 @@ const NavbarStyle = styled.div`
       width: 100%;
       top:96px;
       background:#fff;
-      over-flow:none;
+      overflow:none;
       padding-bottom:2rem;
       box-shadow: 5px 5px 5px 5px #888888;
       padding:2rem;
